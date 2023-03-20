@@ -17,7 +17,7 @@ export default function Projects() {
               " In this website you'll be able to Sing up and Login to a page that is basicly a quiz of 10 question with points . I used Supabase along with React and Formik to create the functionality of the page, and tailwind CSS to stylice it"
             }
             url={"https://login-register-and-quiz.vercel.app/"}
-            image={"/login-quiz.png"}
+            image={"/Login-quiz.png"}
           />
         </div>
         <div className="col-span-full lg:col-span-3 lg:row-span-2  relative rounded  hover:ring-2 ring-black group">
