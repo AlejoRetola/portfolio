@@ -10,7 +10,7 @@ export default function NotHome() {
     function handleScroll() {
       const scrollPosition = window.scrollY;
       console.log(scrollPosition);
-      if (scrollPosition > 10) {
+      if (scrollPosition > 25) {
         setShowArrow(false);
       } else {
         setShowArrow(true);
@@ -43,12 +43,16 @@ export default function NotHome() {
             <p className="font-semibold text-md md:text-lg ">I am a Web Developer based in Bs As , Argentina. Working towards learning more about coding and having fun in the journey.</p>
           </div>
           {/* SVG DIV  */}
-          <div className="w-4/6 sm:w-3/6 h-[250px]  md:min-h-[350px] mr-2 relative">
+          <div className="w-[95%] sm:w-3/6 h-[200px]  md:min-h-[350px] mr-2 relative">
             <Image src="/programming.svg" fill className="object-contain p-3"></Image>
           </div>
         </div>
-        {showArrow && (
-          <div className="text-2xl text-center flex justify-center animate-bounce text-slate-100 ">
+        {showArrow ? (
+          <div className="text-2xl text-center flex justify-center animate-bounce text-slate-100 visible ">
+            <AiOutlineArrowDown className="bg-indigo-500 rounded-full bg-opacity-80 " />
+          </div>
+        ) : (
+          <div className="text-2xl text-center flex justify-center animate-bounce text-slate-100 invisible ">
             <AiOutlineArrowDown className="bg-indigo-500 rounded-full bg-opacity-80 " />
           </div>
         )}
